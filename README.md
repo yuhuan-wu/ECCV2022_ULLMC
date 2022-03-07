@@ -1,6 +1,7 @@
 # ECCV2022_ULLMC
 
-## Results and models
+## Results and models 
+The model weights will be public gradually.
 
 ### ADE20K
 
