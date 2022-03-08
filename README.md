@@ -1,4 +1,4 @@
-# ECCV2022_ULLMC
+# Unifying Local, Long-range, and Multi-scale Contexts for Semantic Segmentation
 
 ## Motivation
 <!-- [IMAGE] -->
