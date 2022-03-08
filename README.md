@@ -1,18 +1,21 @@
 # Unifying Local, Long-range, and Multi-scale Contexts for Semantic Segmentation
 
 ## Motivation
+
 <!-- [IMAGE] -->
 <div align=center>
 <img src="https://user-images.githubusercontent.com/101050701/157171381-2bec4b09-d996-482a-a5d7-5db603e79845.png" width="80%"/>
 </div>
 
 ## Network
+
 <!-- [IMAGE] -->
 <div align=center>
 <img src="https://user-images.githubusercontent.com/101050701/157171430-d621c4b6-db5e-491c-920c-1f9682ff62e5.png" width="80%"/>
 </div>
 
 ## Results and models 
+
 The model weights will be public gradually.
 
 ### ADE20K
@@ -36,3 +39,8 @@ The model weights will be public gradually.
 | ------ | -------- | --------- | ---------- | ------- | -------- | --------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | IIWA | Swin-S | 480x480 | 32         | 40000 | -  | 55.8 | [config](https://github.com/AnonymousECCV/ECCV2022_ULLMC/blob/main/config/iiwa_swins_480x480_40k_pascal_context_59_type2.py)  | [model]() &#124; [log](https://github.com/AnonymousECCV/ECCV2022_ULLMC/releases/download/v1.0/swins_pascal.log.json)     |
 | IIWA | Swin-B | 480x480 | 24         | 40000   | -  | 62.9 | [config](https://github.com/AnonymousECCV/ECCV2022_ULLMC/blob/main/config/iiwa_swinb_480x480_40k_pascal_context_59_type1.py)  | [model]() &#124; [log](https://github.com/AnonymousECCV/ECCV2022_ULLMC/releases/download/v1.0/swinb_pascal.log.json)     |
+
+## Acknowledgement
+
+Thanks to previous open-sourced repo:
+[MMsegmentation](https://github.com/open-mmlab/mmsegmentation)
