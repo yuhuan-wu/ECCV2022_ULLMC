@@ -27,7 +27,8 @@ einops==0.3.0
 ## Installation
 
 Our project is developed based on [MMsegmentation](https://github.com/open-mmlab/mmsegmentation). Please follow the official MMsegmentation [INSTALL.md](docs/install.md) and [getting_started.md](docs/getting_started.md) for installation and dataset preparation.
-To install pytorch, please follow the official [pytorch](https://pytorch.org/get-started/locally/)
+
+To install pytorch, please follow the official [pytorch](https://pytorch.org/get-started/locally/).
 
 ## Results and models 
 
