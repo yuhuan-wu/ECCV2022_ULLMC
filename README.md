@@ -14,6 +14,16 @@
 <img src="https://user-images.githubusercontent.com/101050701/157171430-d621c4b6-db5e-491c-920c-1f9682ff62e5.png" width="80%"/>
 </div>
 
+## Our Environment
+```
+torch=1.7.1
+torchvision=0.8.2
+mmsegmentation=0.20.0
+mmcv-full=1.4.1
+scipy=1.6.0
+einops=0.3.0
+```
+
 ## Installation
 
 Our project is developed based on [MMsegmentation](https://github.com/open-mmlab/mmsegmentation). Please follow the official MMsegmentation [INSTALL.md](docs/install.md) and [getting_started.md](docs/getting_started.md) for installation and dataset preparation.
