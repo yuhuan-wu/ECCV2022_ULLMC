@@ -9,12 +9,12 @@ model = dict(
     backbone=dict(
         type='SwinTransformer',
         pretrain_img_size=384,
-        embed_dims=128,
+        embed_dims=192,
         patch_size=4,
         window_size=12,
         mlp_ratio=4,
         depths=[2, 2, 18, 2],
-        num_heads=[4, 8, 16, 32],
+        num_heads=[6, 12, 24, 48],
         strides=(4, 2, 1, 1),
         out_indices=(0, 1, 2, 3),
         qkv_bias=True,
@@ -28,14 +28,15 @@ model = dict(
         norm_cfg=backbone_norm_cfg),
     neck=dict(
         type='Cascade_TRP',
-        in_channels=[128, 256, 512, 1024],
-        d_models=[128, 256, 512],
+        in_channels=[192, 384, 768, 1536],
+        d_models=[192, 384, 768],
         n_head=[4, 8, 16],
-        dim_feedforwards=[256, 512, 1024],
+        dim_feedforwards=[384, 768, 1536],
+        patch_sizes=[[4, 4], [8, 8], [4, 4], [4, 4], [4, 4], [4, 4]],
         dropout_ratio=0.1,
         num_outs=3,
         norm_cfg=dict(type='BN', requires_grad=True),
-        out_type='1',
+        out_type='2',
         overlap=False,
         cascade_num=1,
         pos_type='sin',
@@ -47,9 +48,9 @@ model = dict(
     # neck=None,
     decode_head=dict(
         type='GTR_DECODER3',
-        embed_dim=256,
-        query_dim=256,
-        memory_dims=[128, 256, 512],
+        embed_dim=384,
+        query_dim=384,
+        memory_dims=[192, 384, 768],
         depths=[1, 1, 1, ],
         num_heads=[8, 8, 8, ],
         window_size_q=(8, 8),
@@ -59,7 +60,7 @@ model = dict(
         qk_scale=None,
         drop_rate=0.,
         attn_drop_rate=0.,
-        drop_path_rate=0.3,
+        drop_path_rate=0.2,
         ape=False,
         patch_norm=True,
         loss_decode=dict(
@@ -83,7 +84,7 @@ train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', reduce_zero_label=True),
     dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
-    dict(type='RandomCrop', crop_size=(512, 512), cat_max_ratio=0.75),
+    dict(type='RandomCrop', crop_size=crop_size, cat_max_ratio=0.75),
     dict(type='RandomFlip', prob=0.5),
     dict(type='PhotoMetricDistortion'),
     dict(type='Normalize', **img_norm_cfg),
@@ -97,6 +98,7 @@ val_pipeline = [
     dict(
         type='MultiScaleFlipAug',
         img_scale=(2048, 512),
+        # img_scale=(618, 618),
         # img_ratios=[0.5, 0.75, 1.0, 1.25, 1.5, 1.75],
         flip=False,
         transforms=[
@@ -113,6 +115,7 @@ test_pipeline = [
     dict(
         type='MultiScaleFlipAug',
         img_scale=(2048, 512),
+        # img_scale=(618, 618),
         img_ratios=[0.5, 0.75, 1.0, 1.25, 1.5, 1.75],
         flip=True,
         transforms=[
@@ -150,8 +153,8 @@ lr_config = dict(
     policy='poly',
     warmup='linear',
     warmup_iters=1500,
-    warmup_ratio=1e-06,
-    power=0.96,
+    warmup_ratio=1e-07,
+    power=0.95,
     min_lr=0.,
     by_epoch=False)
 runner = dict(type='IterBasedRunner', max_iters=160000)
