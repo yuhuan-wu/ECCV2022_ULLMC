@@ -98,7 +98,7 @@ val_pipeline = [
     dict(
         type='MultiScaleFlipAug',
         # img_scale=(2048, 576),
-        img_scale=(618, 618),
+        img_scale=(2048, 618),
         # img_ratios=[0.5, 0.75, 1.0, 1.25, 1.5, 1.75],
         flip=False,
         transforms=[
@@ -115,7 +115,7 @@ test_pipeline = [
     dict(
         type='MultiScaleFlipAug',
         # img_scale=(2048, 576),
-        img_scale=(618, 618),
+        img_scale=(2048, 618),
         img_ratios=[0.5, 0.75, 1.0, 1.25, 1.5, 1.75],
         flip=True,
         transforms=[
