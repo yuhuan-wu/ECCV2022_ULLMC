@@ -167,8 +167,8 @@ class Mlp(nn.Module):
         x = self.drop(x)
         return x
 
-
-class SelfIIWA(nn.Module):
+#Self-IIWA
+class WindowAttention(nn.Module):   
     r""" Window based multi-head self attention (W-MSA) module with relative position bias.
     It supports both of shifted and non-shifted window.
 
@@ -374,8 +374,8 @@ class SelfIIWA(nn.Module):
         flops += N * self.dim * self.dim
         return flops
 
-
-class MS_CrossIIWA(nn.Module):
+# MS_CrossIIWA
+class WindowCrossAttention(nn.Module):
     r""" Window based multi-head self attention (W-MSA) module with relative position bias.
     It supports both of shifted and non-shifted window.
 
