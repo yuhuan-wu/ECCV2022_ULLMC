@@ -11,7 +11,7 @@ from .base import BaseSegmentor
 
 
 @SEGMENTORS.register_module()
-class GTR_SEG(BaseSegmentor):
+class ULLMC(BaseSegmentor):
     """Encoder Decoder segmentors.
 
     EncoderDecoder typically consists of backbone, decode_head, auxiliary_head.
@@ -28,7 +28,7 @@ class GTR_SEG(BaseSegmentor):
                  test_cfg=None,
                  pretrained=None,
                  init_cfg=None):
-        super(GTR_SEG, self).__init__(init_cfg)
+        super(ULLMC, self).__init__(init_cfg)
         if pretrained is not None:
             assert backbone.get('pretrained') is None, \
                 'both backbone and segmentor set pretrained weight'
