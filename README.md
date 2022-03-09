@@ -16,12 +16,12 @@
 
 ## Our Environment
 ```
-torch=1.7.1
-torchvision=0.8.2
-mmsegmentation=0.20.0
-mmcv-full=1.4.1
-scipy=1.6.0
-einops=0.3.0
+torch==1.7.1
+torchvision==0.8.2
+mmsegmentation==0.20.0
+mmcv-full==1.4.1
+scipy==1.6.0
+einops==0.3.0
 ```
 
 ## Installation
