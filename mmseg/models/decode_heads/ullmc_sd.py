@@ -20,6 +20,6 @@ from mmseg.models.losses import accuracy
 
 from abc import ABCMeta, abstractmethod
 
-from mmseg.models.utils.layers import SelfIIWA, MS_CrossIIWA
+from mmseg.models.utils.layers import WindowAttention, WindowCrossAttention
 import torch.utils.checkpoint as checkpoint
 from einops import rearrange
