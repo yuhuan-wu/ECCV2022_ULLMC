@@ -616,21 +616,4 @@ class MS_CrossIIWA(nn.Module):
 
 
 if __name__ == '__main__':
-    # arr = np.random.random((3,3))
-    arr = torch.rand(5, 4, 6)
-    indices = []
-    for i in range(arr.shape[0]):
-        indices.append(linear_sum_assignment(arr[i], True))
-    indices = [torch.as_tensor(j, dtype=torch.int64) for i, j in indices]
-
-    wa = WindowAttention(256, window_size=(7, 7), num_heads=8, )
-    wa = WindowCrossAttention(
-        dim=64,
-        window_size_q=(7, 7),
-        window_size_k=(7, 7),
-        num_heads=8,
-    )
-    x = torch.rand(1, 56, 56, 64)
-    y = [torch.rand(1, 56, 56, 64), torch.rand(1, 28, 28, 64), torch.rand(1, 14, 14, 64)]
-    z = wa(x, y)
     pass
