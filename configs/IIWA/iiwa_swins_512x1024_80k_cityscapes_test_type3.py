@@ -183,5 +183,5 @@ lr_config = dict(
 runner = dict(type='IterBasedRunner', max_iters=80000)
 checkpoint_config = dict(by_epoch=False, interval=8000)
 evaluation = dict(interval=8000, metric='mIoU')
-load_from = 
+load_from = './work_dirs/gtr_swins_512x1024_80k_cityscapes_CF_type1/iter_80000.pth'
 # find_unused_parameters = True
