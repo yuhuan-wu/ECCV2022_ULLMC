@@ -40,7 +40,7 @@ The model weights will be public gradually. The extracted code is `2050`.
 | ------ | -------- | --------- | ---------- | ------- | -------- | --------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | IIWA | Swin-S | 512x512  | 16          | 160000   | -        |  48.30 | [config](https://github.com/AnonymousECCV/ECCV2022_ULLMC/blob/main/configs/IIWA/iiwa_swins_512x512_160k_ade20k_type1.py)  | - &#124; -     |
 | IIWA | Swin-B | 512x512  | 16          | 160000   | -        | 51.85 | [config](https://github.com/AnonymousECCV/ECCV2022_ULLMC/blob/main/configs/IIWA/iiwa_swinb_512x512_160k_ade20k_type1.py)  | [model]() &#124; [log]()     |
-| IIWA | Swin-L | 512x512  | 8           | 160000   | -              | 53.20 | [config](https://github.com/AnonymousECCV/ECCV2022_ULLMC/blob/main/configs/IIWA/iiwa_swinl_512x512_160k_ade20k_type1.py)  | [model]() &#124; [log]()     |
+| IIWA | Swin-L | 512x512  | 8           | 160000   | -              | 53.20 | [config](https://github.com/AnonymousECCV/ECCV2022_ULLMC/blob/main/configs/IIWA/iiwa_swinl_512x512_160k_ade20k_type1.py)  | [model](https://pan.baidu.com/s/1XRVS17NxuHP6S3c7TFLnxw) &#124; [log]()     |
 
 ### Cityscapes
 
