@@ -32,7 +32,7 @@ To install pytorch, please follow the official [pytorch](https://pytorch.org/get
 
 ## Results and models 
 
-The model weights will be public gradually.
+The model weights will be public gradually. The extracted code is `2050`.
 
 ### ADE20K
 
@@ -53,7 +53,7 @@ The model weights will be public gradually.
 
 | Method | Backbone | Crop Size | Batch Size | Lr schd | Mem (GB) | mIoU (ss) | config                                                                                                                          | download                                                                                                                                                                                                                                                                                                                                                     |
 | ------ | -------- | --------- | ---------- | ------- | -------- | --------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| IIWA | Swin-S | 480x480 | 32         | 40000 | -  | 55.8 | [config](https://github.com/AnonymousECCV/ECCV2022_ULLMC/blob/main/config/IIWA/iiwa_swins_480x480_40k_pascal_context_59_type2.py)  | [model]() &#124; [log](https://github.com/AnonymousECCV/ECCV2022_ULLMC/releases/download/v1.0/swins_pascal.log.json)     |
+| IIWA | Swin-S | 480x480 | 32         | 40000 | -  | 55.8 | [config](https://github.com/AnonymousECCV/ECCV2022_ULLMC/blob/main/config/IIWA/iiwa_swins_480x480_40k_pascal_context_59_type2.py)  | [model](https://pan.baidu.com/s/1QQduoRi1me0Jmuer3jgjwQ) &#124; [log](https://github.com/AnonymousECCV/ECCV2022_ULLMC/releases/download/v1.0/swins_pascal.log.json)     |
 | IIWA | Swin-B | 480x480 | 24         | 40000   | -  | 62.9 | [config](https://github.com/AnonymousECCV/ECCV2022_ULLMC/blob/main/configs/IIWA/iiwa_swinb_480x480_40k_pascal_context_59_type1.py)  | [model]() &#124; [log](https://github.com/AnonymousECCV/ECCV2022_ULLMC/releases/download/v1.0/swinb_pascal.log.json)     |
 
 ## Acknowledgement
