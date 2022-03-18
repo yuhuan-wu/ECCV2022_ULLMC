@@ -3,7 +3,7 @@
 ## Content
 * [Abstract](#Abstract)
 * [Motivation](#Motivation)
-* [Our Environment](#OurEnvironment)
+* [Environment](#Our_Environment)
 * [Installation](#Installation)
 * [Results](#Results)
 * [Acknowledgement](#Acknowledgement)
@@ -25,7 +25,7 @@
 <img src="https://user-images.githubusercontent.com/101050701/157171430-d621c4b6-db5e-491c-920c-1f9682ff62e5.png" width="80%"/>
 </div>
 
-## Our Environment
+## Our_Environment
 ```
 torch==1.7.1
 torchvision==0.8.2
@@ -41,7 +41,7 @@ Our project is developed based on [MMsegmentation](https://github.com/open-mmlab
 
 To install pytorch, please follow the official [pytorch](https://pytorch.org/get-started/locally/).
 
-## Results and models 
+## Results 
 
 The model weights will be public gradually. The extracted code is `2050`.
 
