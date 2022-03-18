@@ -3,13 +3,15 @@
 ## Content
 * [Abstract](#Abstract)
 * [Motivation](#Motivation)
+* [Network](#Network)
 * [Environment](#Our_Environment)
 * [Installation](#Installation)
 * [Results](#Results)
 * [Acknowledgement](#Acknowledgement)
 
 ## Abstract
-
+Modeling effective contextual information is crucial for accurate prediction in semantic segmentation. Most existing studies have made efforts to learn multi-scale or long-range context, yet their explorations of modeling context are not comprehensive enough that they cannot build an efficient mechanism to capture local, long-range, and multi-scale context at the same time. In this paper, we propose to unify these three types of contexts for semantic segmentation. Firstly, we introduce a novel attention module named IIWA (Intra- and Inter- Window Attention) which combines intra-window attention and inter-window attention to model local and long-range contextual information respectively. Moreover, to capture long-range dependencies across multiple scales and obtain multi-scale context simultaneously, we utilize the IIWA to construct a feature fusion module and a segmentation decoder. Among them, the feature fusion module aims to aggregate the three contexts from the features with two adjacent scales and provide multiple fused features for the next context aggregation. On the other hand, the segmentation decoder allows the query feature to interact with the enhanced features at multiple scales simultaneously. Therefore, it can build relationships across different scales to obtain multi-scale context while aggregating the local and long-range contexts. With the help of strong contextual modeling, our network surpasses state-of-the-art performances on three
+benchmarks: ADE20K, Cityscapes, and Pascal Context. Especially on Pascal Context, we exceed the previous state-of-the-art method by 7.7% mIoU.
 
 ## Motivation
 
